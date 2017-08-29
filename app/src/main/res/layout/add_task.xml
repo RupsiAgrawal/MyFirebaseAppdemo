@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/edittxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Task Title"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/input_layout_title"
+            android:layout_alignLeft="@+id/input_layout_title"
+            android:layout_alignRight="@+id/input_layout_title"
+            android:layout_alignStart="@+id/input_layout_title"
+            android:layout_below="@+id/input_layout_title"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/edittxtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Task Description"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/action_save"
+            android:textColor="@android:color/white" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnSave"
+            android:layout_alignLeft="@+id/input_layout_desc"
+            android:layout_alignRight="@+id/btnSave"
+            android:layout_alignStart="@+id/input_layout_desc"
+            android:layout_below="@+id/input_layout_desc"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/edittxtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textIsSelectable="true"
+                android:hint="Select Date"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/input_layout_date"
+            android:layout_alignEnd="@+id/input_layout_desc"
+            android:layout_alignRight="@+id/input_layout_desc"
+            android:layout_toRightOf="@+id/input_layout_date">
+
+            <EditText
+                android:id="@+id/edittxtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Select Time"
+                android:textIsSelectable="true"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/input_layout_desc"
+            android:layout_alignLeft="@+id/input_layout_date"
+            android:layout_alignRight="@+id/input_layout_desc"
+            android:layout_alignStart="@+id/input_layout_date"
+            android:layout_below="@+id/input_layout_time"
+            android:spinnerMode="dialog" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

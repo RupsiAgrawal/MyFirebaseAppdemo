@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/contentWithBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/in_message_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="240dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:text="text"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/chatimageitem"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/ic_launcher"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_below="@+id/content"-->
+        <!--/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/contentWithBackgroundimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/chatImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:id="@+id/txtDateimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:textColor="@color/chatdatewhite"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
